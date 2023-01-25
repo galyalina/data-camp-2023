@@ -9,18 +9,18 @@
 gcloud auth application-default login
 
 # Initialize state file (.tfstate)
-hw1-terraform init
+terraform init
 
 # Check changes to new infra plan
-hw1-terraform plan -var="project=<your-gcp-project-id>"
+terraform plan -var="project=<your-gcp-project-id>"
 ```
 
 ```shell
 # Create new infra
-hw1-terraform apply -var="project=<your-gcp-project-id>"
+terraform apply -var-file="datacamp.tfvars"
 ```
 
 ```shell
 # Delete infra after your work, to avoid costs on any running services
-hw1-terraform destroy
+terraform destroy
 ```
