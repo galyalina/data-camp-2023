@@ -1,2 +1,4 @@
 .terraform
 .idea
+.ipynb_checkpoints/
+volumes
